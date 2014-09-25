@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return array(
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'Asia/Manila',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -122,6 +122,14 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+		//3RD PARTY PACKAGES
+		'Frozennode\XssInput\XssInputServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
+		'Intervention\Image\ImageServiceProvider',
+		'Maatwebsite\Excel\ExcelServiceProvider',
+		'McCool\LaravelAutoPresenter\LaravelAutoPresenterServiceProvider',
+		'Atrauzzi\LaravelDoctrine\ServiceProvider',
+
 		//Trainr Service Provider
 		'Trainr\Repository\RepositoryServiceProvider',
 		'Trainr\Gateway\GatewayServiceProvider',
@@ -171,7 +179,7 @@ return array(
 		'Form'            => 'Illuminate\Support\Facades\Form',
 		'Hash'            => 'Illuminate\Support\Facades\Hash',
 		'HTML'            => 'Illuminate\Support\Facades\HTML',
-		'Input'           => 'Illuminate\Support\Facades\Input',
+		'Input'           => 'Frozennode\XssInput\XssInput',
 		'Lang'            => 'Illuminate\Support\Facades\Lang',
 		'Log'             => 'Illuminate\Support\Facades\Log',
 		'Mail'            => 'Illuminate\Support\Facades\Mail',
@@ -192,7 +200,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-
+		'Image'           => 'Intervention\Image\Facades\Image',
+		'Excel'           => 'Maatwebsite\Excel\Facades\Excel',
+		'Doctrine'        => 'Atrauzzi\LaravelDoctrine\Support\Facades\Doctrine',
 	),
 
 );

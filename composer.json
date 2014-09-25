@@ -11,7 +11,8 @@
     "maatwebsite/excel"   : "dev-master",
     "fzaninotto/Faker"    : "dev-master",
     "rhumsaa/uuid"        : "~2.7",
-    "mccool/laravel-auto-presenter": "~2.2"
+    "mccool/laravel-auto-presenter": "~2.2",
+    "atrauzzi/laravel-doctrine": "dev-master"
   },
   "require-dev":{
     "phpunit/phpunit" : "3.7.*"
